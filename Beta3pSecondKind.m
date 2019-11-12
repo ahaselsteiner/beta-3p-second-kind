@@ -34,7 +34,7 @@ classdef Beta3pSecondKind < handle
           pdf = @(x, alpha, k, n) alpha ./ (beta(k, n - k + 1)) .* ...
               ((alpha .* x).^(n - k)) ./ ((1 + alpha .* x).^(n + 1));
           % Similar to 10.1016/S0029-8018(98)00022-5, equation 5. However, 
-          % for correctedness, CDF(inf)=1, we added a factor of alpha.
+          % for correctness, CDF(inf)=1, we multiply with alpha.
          
           if nargin < 3
               f = pdf(x, this.Alpha, this.K, this.N);
