@@ -31,7 +31,7 @@ for i = 1:nOfSamples
     nEstimated(i) = pdEstimated(i).N;
 end
 
-fig2 = figure('position', [100 100 400, 130]);
+fig2 = figure('position', [100 100 500, 230]);
 subplot(1, 3, 1)
 hold on
 plot([0.5 1.5], [0.21 0.21], '-k')
@@ -64,3 +64,4 @@ text(1.15, 2, [num2str(mean(nEstimated), '%1.3f') '+-' ...
     num2str(std(nEstimated), '%1.3f')], 'fontsize', 8, ...
     'verticalalignment', 'bottom'); 
 box off
+suptitle('Parameter estimation');
