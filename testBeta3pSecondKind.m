@@ -3,16 +3,15 @@ pdTrue = Beta3pSecondKind(0.21, 14.21, 20.34);
 x = [0:0.01:9];
 f = pdTrue.pdf(x);
 
-fig1 = figure('position', [100 100 450 280])
+fig1 = figure('position', [100 100 450 280]);
 plot(x, f);
  message = sprintf(['In Ferreira and Soares (1999), Fig. 1b \n' ...
      '(doi: 10.1016/S0029-8018(98)00022-5) \n' ...
      'the PDF peaks at ~2 m with density of ~0.4']);
-%text(2, 0.45, message, 'horizontalalignment', ...
-%    'center', 'fontsize', 8);
+text(2, 0.45, message, 'horizontalalignment', ...
+    'left', 'fontsize', 8);
 ylabel('Density (-)');
 xlabel('Significant wave height (m)');
-%title('Parameters from Ferreira and Soares (1999)');
 ylim([0 0.5]);
 box off
 
