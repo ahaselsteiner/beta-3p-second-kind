@@ -4,7 +4,7 @@
 % https://arxiv.org/pdf/1911.12835.pdf .
 
 classdef Beta3pSecondKind < handle
-% We use the parameterization and variables names that are also used in 
+% We use the parameterization and variable names that are also used in 
 % 10.1016/S0029-8018(98)00022-5, equation 5
    properties
       Alpha
