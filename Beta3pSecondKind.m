@@ -1,3 +1,8 @@
+% This software was written for the publication
+% "Predicting wave heights for marine design by prioritizing extreme 
+% events in a global model" by A.F. Haselsteiner and K-D. Thoben, see
+% https://arxiv.org/pdf/1911.12835.pdf .
+
 classdef Beta3pSecondKind < handle
 % We use the parameterization and variables names that are also used in 
 % 10.1016/S0029-8018(98)00022-5, equation 5
